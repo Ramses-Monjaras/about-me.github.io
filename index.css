@@ -1,0 +1,157 @@
+/* Background */
+
+body {
+    background-color: #000000;    
+    }
+    
+    /* Headers */
+    
+    h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    }
+    
+    h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: #FFFFFF;    
+    }
+    
+    /* Paragraph */
+    
+    p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;    
+    }
+    
+    /* Lists */
+    
+    ul {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF;    
+    }
+    
+    /* Link */
+    
+    a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #FFFFFF
+    }
+    
+    /* Containers */
+    
+    .containers {
+    display: grid;
+    grid-template-rows: 50px 50px;
+    grid-template-columns: 50px 50px;
+    grid-column-gap: 2%;
+    grid-row-gap: 5%;
+    }
+    
+    .grid-1 {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    background-color: #0092CC50;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    }
+    
+    .grid-1:hover {
+    background-color: #0092CC30;    
+    }
+    
+    .grid-2 {
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    background-color: #FF333350;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;   
+    }
+    
+    .grid-2:hover {
+    background-color: #FF333330    
+    }
+    
+    .grid-3 {
+     border-style: double;
+     border-width: 5px;
+     border-color: #FFFFFF;
+     background-color: #DCD42750;
+     grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row: 1;
+    }
+    
+    .grid-3:hover {
+    background-color: #DCD42730
+    }
+    
+    .grid-4 {
+     border-style: ridge;
+     border-width: 5px;
+     border-color: #FFFFFF;
+     background-color: #77993350;
+     grid-column-start: 1;
+     grid-column-end: 3;
+     grid-row: 1;
+    }
+    
+    .grid-4:hover {
+    background-color: #77993330;
+    }
+    
+    .grid-5 {
+    border-style: groove;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    background-color: #FFA50050;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    }
+    
+    .grid-5:hover {
+    background-color: #FFA50030
+    }
+    
+    .grid-6 {
+    border-style: outset;
+    border-width: 5px;
+    border-color: #FFFFFF;
+    background-color: #8F00FF50;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+    }
+    
+    .grid-6:hover {
+    background-color: #8F00FF30;
+    }
+
+.new-container {
+display: grid;
+grid-template-rows: auto auto;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+margin: 20px 0;
+}
+
+.GridItem {
+padding: 15px;
+border: 1px solid;
+border-radius: 5px;
+background-color: #0091D5;    
+}
+
+.span-full {
+grid-column: 1 / span 2;
+}
+

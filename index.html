@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <link rel="stylesheet" type="text/css"
+    href="./index.css">
+
+</head>
+
+<title>About Me</title>
+
+<p style="text-align:center;"><img src="./Images/logo-big.png" alt="ECU logo in full color"></p>
+
+<h2>Navigation</h2>
+
+<nav><ul>
+    <li><a href="#aboutme">About Me</a></li>
+    <li><a href="#classes">Classes</a></li>
+    <li><a href="#hobbies">Hobbies</a></li>
+</ul></nav>
+
+<!--Last Updated: Fri, Apr 25/5:31-->
+
+<article><selection id="aboutme"><h1>About Me</h1></selection>
+<body>
+ <img src=".\Images\Comuter science.jpg" alt="A computer screen full of codes">
+
+<b><br><p>My name is Ramses Monjaras</p></b></br>
+<br><p><i>My major is Computer Science</i></p></br>
+<p><u><br>I am a Junior</u></p></br>
+
+<br><selection id="classes"><p>This semester I am taking the following classes:</p><ul>
+
+    <li>Internet Programming</li>
+    <li>Computer Literacy</li>
+    <li>Database Design</li> 
+    <li>Algorithm Analysis</li>
+    <li>Data Mining</li>
+    <li>Elementary Spanish 1</li>   
+</br>
+
+<br><div class="container">
+    <div class="grid-1">
+    <h2>CMPSC 3323: Internet Programming</h2>
+    <p>Internet programming covers how to program in HTML and the history of the internet. What I like about this class is that it is hands on.</p>
+    </div>
+
+    <div class="grid-2">  
+    <h2>CMPSC 1513: Computer Literacy</h2>
+    <p>Computer Literacy covers the different features Windows has. What I like about this class is that I learned useful shortcuts in Windows. </p>
+    </div>
+
+    <div class="grid-3">
+    <h2>CMPSC 4213: Database Design</h2> 
+    <p>Database Design covers different parts of a data base and how it works. I find learning about how data bases work to be interesting.</p>
+    </div>    
+
+    <div class="grid-4">
+    <h2>CPSMA 3103: Algorithm Analysis</h2> 
+    <p>Algorithm Analysis covers the different algorithms and how they work. What I like about this class is learning about the differnet kinds of algorithm.</p>
+    </div>
+  
+    <div class="grid-5">
+    <h2>CMPSC 3813: Data Mining</h2> 
+    <p>Data Mining covers how to interpret data and how to graph them. What I like about this class, is that it is also hands on.</p>
+    </div>
+
+    <div class="grid-6">
+    <h2>SPAN 1113: Elementary Spanish 1</h2>
+    <p>Elementary Spanish 1 cover how to say basic object and saying in Spanish. What I like about this class is how simple it is.</p></selection>
+    </div>
+    </div>
+</br>
+<div class="new-container">
+    <div class="GridItem">
+        <h2>Calculator</h2>
+        <form class="calculator-form" onsubmit="calculate(); return false;">
+            <label for="num1">First number:</label>
+            <input type="number" id="num1" required>
+
+            <label>Operation:</label>
+            <div class="operation-options">
+                <input type="radio" id="add" name="operator" value="+" checked>
+                <label for="add">+</label>
+            </div>
+
+            <div class="operation-options">
+                <input type="radio" id="subtract" name="operator" value="-" checked>
+                <label for="subtract">-</label>
+            </div>
+
+            <div class="operation-options">
+                <input type="radio" id="multiply" name="operator" value="*">
+                <label for="multiply">x</label>
+            </div>
+
+            <div class="operation-options">
+                <input type="radio" id="divide" name="operator" value="/">
+                <label for="divide">÷</label>
+            </div>
+
+            <label for="num2">Second number:</label>
+            <input type="number" id="num2" required>
+
+            <button type="submit">Calculate</button>
+        </form>
+    </div>
+
+    <div class="GridItem">
+        <h2>Factoral Calculator</h2>
+        <form class="factoral-form" onsubmit="calculatorFactorial(); return false;">
+            <label for="factorialNumber">Enter a positive number:</label>
+            <input type="number" id="factorialNumber" min="0" required>
+            <button type="submit">Calculate Factorial</button>
+        </form>
+    </div>
+
+    <div class="GridItem">
+        <h2>Fibonacci Calculator</h2>
+        <form class="fibonacci-form" onsubmit="calculateFibonacci(); return false;">
+            <label for="fibonacciNumber">Enter a positive number (n):</label>
+            <input type="number" id="fibonacciNumber" min="0" required>
+            <button type="submit">Calculate Fibonacci</button>
+        </form>
+    </div>
+
+    <div class="GridItem">
+        <h2>Number Analyzer</h2>
+        <form class="number-analyzer-form" onsubmit="analyzeNumbers(); return false;">
+            <label for="num1">First number:</label>
+            <input type="number" id="analyzeNum1" required>
+            
+            <label for="num2">Second number:</label>
+            <input type="number" id="analyzeNum2" required>
+            
+            <label for="num3">Third number:</label>
+            <input type="number" id="analyzeNum3" required>
+            
+            <button type="submit">Analyze Numbers</button>
+        </form>
+    </div>
+
+    <div class="GridItem span-full">
+        <h2>Mailing List Sign-Up</h2>
+        <form id="mailingListForm" onsubmit="processSignUp(); return false;">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" placeholder="John" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" placeholder="Doe" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="John@AOL.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="zipCode">ZIP Code:</label>
+                <input type="text" id="zipCode" placeholder="12345" pattern="\d{5}" title="5-digit ZIP code" required>
+            </div>
+            
+            <div class="form-buttons">
+                <button type="submit" class="submit-btn">Sign Up</button>
+                <button type="reset" class="reset-btn">Reset Form</button>
+            </div>
+        </form>
+        
+        <div id="signupResults" class="signup-results">
+            <h3>Current Sign-Ups:</h3>
+        </div>
+    </div>
+<br><selection id="hobbies"><p>I enjoy</p><ul>
+
+    <li>Playing video games</li>
+    <li>Listening to music</li>
+    <li>Hanging out with friends</li></ul></selection>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TcMBFSGVi1c?si=eaH-fDIzKMKoONS9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br><a href="https://www.ecok.edu/">ECU Homepage</a></br>
+</article>
+    <script src="index.js"></script>
+</body>
+</html>
